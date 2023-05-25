@@ -1,5 +1,5 @@
 <script>
-	let name = 'Devahoy'
+	export let name = 'Devahoy'
 	let src = 'https://source.unsplash.com/layMbSJ3YOE'
 </script>
 
