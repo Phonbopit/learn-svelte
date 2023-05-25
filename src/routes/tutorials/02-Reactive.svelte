@@ -1,29 +1,29 @@
 <script lang="ts">
-	let count = 0
-	let newTodo = ''
+  let count = 0;
+  let newTodo = '';
 
-	export let todos: string[] = []
+  export let todos: string[] = [];
 
-	function handleClick() {
-		count += 1
-	}
+  function handleClick() {
+    count += 1;
+  }
 
-	const addTodo = (newTodo: string) => {
-		todos = [...todos, newTodo]
-	}
+  const addTodo = (newTodo: string) => {
+    todos = [...todos, newTodo];
+  };
 
-	// watch count and update doubled
-	// declare variable with $: prefix
-	$: doubled = count * 2
+  // watch count and update doubled
+  // declare variable with $: prefix
+  $: doubled = count * 2;
 
-	// run a statement
-	$: console.log('count is', count)
+  // run a statement
+  $: console.log('count is', count);
 
-	// run a group statements
-	$: {
-		console.log('group: count is', count)
-		console.log('group: doubled is', doubled)
-	}
+  // run a group statements
+  $: {
+    console.log('group: count is', count);
+    console.log('group: doubled is', doubled);
+  }
 </script>
 
 <button on:click={handleClick}>Click me!</button>
@@ -33,7 +33,7 @@
 
 <h4>List of Todos</h4>
 {#each todos as todo}
-	<p>{todo}</p>
+  <p>{todo}</p>
 {/each}
 
 <input type="text" bind:value={newTodo} />

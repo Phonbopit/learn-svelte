@@ -1,6 +1,6 @@
 <script>
-	import HelloWorld from './01-HelloWorld.svelte'
-	import Reactive from './02-Reactive.svelte'
+  import HelloWorld from './01-HelloWorld.svelte';
+  import Reactive from './02-Reactive.svelte';
 </script>
 
 <h1>Learn from tutorials</h1>
