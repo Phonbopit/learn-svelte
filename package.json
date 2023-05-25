@@ -10,6 +10,7 @@
 		"test": "vitest",
 		"test:ui": "vitest --ui",
 		"test:e2e": "playwright test",
+		"test:ci": "CI=true vitest --coverage",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
