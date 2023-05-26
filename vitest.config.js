@@ -11,6 +11,9 @@ export default defineConfig({
   test: {
     include: ['src/**/*.{test,spec}.{js,ts,svelte,jsx,tsx}'],
     globals: true,
-    environment: 'jsdom'
+    environment: 'jsdom',
+    coverage: {
+      provider: 'c8'
+    }
   }
 });
