@@ -1,6 +1,6 @@
 <script>
-  let name = 'Devahoy';
-  let src = 'https://source.unsplash.com/layMbSJ3YOE';
+  let name = 'Devahoy'
+  let src = 'https://source.unsplash.com/layMbSJ3YOE'
 </script>
 
 <h1>Hello, {name}!</h1>

@@ -1,28 +1,28 @@
 <script lang="ts">
-  let count = 0;
-  let newTodo = '';
+  let count = 0
+  let newTodo = ''
 
-  export let todos: string[] = [];
+  export let todos: string[] = []
 
   function handleClick() {
-    count += 1;
+    count += 1
   }
 
   const addTodo = (newTodo: string) => {
-    todos = [...todos, newTodo];
-  };
+    todos = [...todos, newTodo]
+  }
 
   // watch count and update doubled
   // declare variable with $: prefix
-  $: doubled = count * 2;
+  $: doubled = count * 2
 
   // run a statement
-  $: console.log('count is', count);
+  $: console.log('count is', count)
 
   // run a group statements
   $: {
-    console.log('group: count is', count);
-    console.log('group: doubled is', doubled);
+    console.log('group: count is', count)
+    console.log('group: doubled is', doubled)
   }
 </script>
 
