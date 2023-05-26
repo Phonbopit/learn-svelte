@@ -18,7 +18,7 @@ describe('Counter.svelte', () => {
     const resetButton = getByText('Reset!')
     const count = getByTestId('count')
 
-    fireEvent.click(resetButton)
+    await fireEvent.click(resetButton)
 
     expect(count.textContent).toEqual('Total clicks is 0')
   })

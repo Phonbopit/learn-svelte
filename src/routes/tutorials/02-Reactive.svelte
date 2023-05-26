@@ -26,7 +26,7 @@
   }
 </script>
 
-<button on:click={handleClick}>Click me!</button>
+<button data-testid="click-me" on:click={handleClick}>Click me!</button>
 
 <p>Total count is {count}</p>
 <p>Total doubled is {doubled}</p>
